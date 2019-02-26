@@ -23,21 +23,20 @@ html {
 .banner-title {
     color: #fb4534;
     font-size: 4.2em;
-    margin: 0;
-    height: inherit;
-    padding: 30px 0 0 0;
+    line-height: 160px;
+    text-transform: uppercase;
 }
 
 nav {
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
-    height: 2.5em;
+    height: 3.5em;
     background-color: #08090c;
 }
 
 nav ul {
-    flex-grow: 4;
+    flex: 1 0 60%;
     display: flex;
     justify-content: center;
     height: inherit;
@@ -46,47 +45,50 @@ nav ul {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 0 0 0;
-    height: inherit;
-}
-
-nav ul li:not(first) {
-    margin-left: 5px;
+    line-height: 3.5em;
 }
 
 nav ul li a {
     text-decoration: none;
+    text-transform: uppercase;
     color: #f8f8f8;
-    font-size: 1.2em;
-    line-height: inherit;
-    padding: 7px 5px 7px 5px;
+    font-size: 1.4em;
+    padding: 8px;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
     background-color: #161616;
-    transition: all .25s;
+    transition: all .35s;
 }
 
 #login {
-    flex-grow: 1;
+    flex: 1 0 20%;
     text-align: right;
+    margin-right: 10px;
+}
+
+#login:hover {
+    background-color: #08090c;
 }
 
 #login a {
-    background-color: blue;
     border-radius: 2px;
-    color: #de0611;
+    color: #e10813;
     padding: 3px 5px 3px 5px;
 }
 
 #musictoggle a {
     border-radius: 2px;
-    background-color: blue;
-    color: #de0611;
+    color: #e10813;
     padding: 3px 5px 3px 5px;
 }
 
 #musictoggle {
-    flex-grow: 1;
+    flex: 1 0 20%;
     text-align: left;
+    margin-left: 10px;
+}
+
+#musictoggle:hover {
+    background-color: #08090c;
 }
