@@ -65,7 +65,7 @@ nav ul li:not(first) {
 }
 
 nav ul li:hover {
-    transition: all .35s;
+    transition: all .05s;
     border-bottom: solid 2px #e10813;
 }
 
@@ -144,6 +144,7 @@ nav ul li:hover {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 0 20px 0;
+    border-left: solid 3px white;
 }
 
 .card-content p {
@@ -202,5 +203,6 @@ nav ul li:hover {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(249, 249, 249, 0.2);
+    transition: all .15s;
 }
