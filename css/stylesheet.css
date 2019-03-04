@@ -10,9 +10,10 @@
 
 html {
     font-family: 'Lato', sans-serif;
+    background: url("../images/bg_maingrunge.png") no-repeat center top;
     background-color: #060709;
+    background-size: 160%;
 }
-
 
 /****************** BANNER *******************/
 .banner {
@@ -55,13 +56,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #f8f8f8;
-    font-size: 1.2em;
-    padding: 8px 12px 8px 12px;
+    color: #f6af6d;
+    font-size: 1em;
+    padding: 5px 2px 2px 2px;
 }
 
 nav ul li:not(first) {
-    margin-left: 20px;
+margin-left: 8px;
 }
 
 nav ul li:hover {
@@ -72,7 +73,7 @@ nav ul li:hover {
 #login {
     flex: 1 0 20%;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 #login:hover {
@@ -82,16 +83,14 @@ nav ul li:hover {
 
 #login a {
     border-radius: 5px;
-    color: #e10813;
     padding: 8px 11px 8px 11px;
-    background-color: #131415;
 }
 
 #logo {
     padding-top: none;
     flex: 1 0 20%;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 #logo img {
@@ -107,6 +106,12 @@ nav ul li:hover {
 
 #thunder {
     font-weight: bold;
+}
+
+.navitem1 {
+ background: linear-gradient(to left, #eee, #333);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 
 /****************** NEWS SECTION *******************/
@@ -126,25 +131,28 @@ nav ul li:hover {
 .info-text {
     margin: 0 auto 0 5%;
     align-self: center;
-    flex-basis: 30%;
-    color: white;
+    flex-basis: 35%;
+    color: #fdd8bd;
+    padding: 20px 30px 20px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .top-info img {
     margin: 0 auto;
     padding: 50px;
-    flex-basis: 20%;
-    width: 80px;
+    width: 300px;
     height: 320px;
 }
 .title-tag {
-    background-color: grey;
-    padding: 5px 8px 5px 20px;
+    background-color: #171717;
+    padding: 8px 12px 8px 20px;
     width: 60px;
+    color: #f6af6d;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 0 20px 0;
-    border-left: solid 3px white;
+    border-left: solid 3px #202423;
 }
 
 .card-content p {
@@ -160,14 +168,13 @@ nav ul li:hover {
 	display: block;
 	border: 0;
 	width: 100%;
-	height: auto;
-    border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .card {
-	background: white;
+	background: #171717;
 	margin-bottom: 2em;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .card a {
@@ -190,7 +197,6 @@ nav ul li:hover {
 }
 
 /* Flexbox stuff */
-
 .cards {
    display: flex;
    flex-wrap: wrap;
@@ -199,10 +205,12 @@ nav ul li:hover {
 
 .card {
     margin: 5px 30px 5px 30px;
-	flex: 0 1 19%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+  	flex: 0 1 25%;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(249, 249, 249, 0.2);
-    transition: all .15s;
+    position: relative;
+    top: -8px;
+    transition: top .05s;
 }
