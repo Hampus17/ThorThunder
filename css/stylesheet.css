@@ -264,7 +264,7 @@ nav ul li:hover {
     display: flex;
     height: 80vh;
     width: 100%;
-    background-color: #000;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .green-earth {
@@ -374,3 +374,22 @@ nav ul li:hover {
       height: 120px;
   }
 }
+
+/****************** EVENTS SECTION *******************/
+#events {
+    width: 100%;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: red;
+    border-bottom: solid 2px blue;
+}
+
+.event:nth-child(1) { order: 1; }
+.event:nth-child(2) { order: 2; }
+.event:nth-child(3) { order: 4; }
+.event:nth-child(4) { order: 3; }
+.event:nth-child(5) { order: 5; }

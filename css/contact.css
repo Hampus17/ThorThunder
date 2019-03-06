@@ -1,0 +1,198 @@
+/****************** FONTS *******************/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+/****************** CSS *******************/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    background: url("../images/bg_maingrunge.png") no-repeat center top;
+    background-color: #000;
+    background-size: 160%;
+}
+
+/****************** NAVBAR *******************/
+nav {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    height: 3.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.99);
+    transition: background .50s;
+}
+
+nav ul {
+    flex: 1 0 60%;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 3.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 5px 2px 2px 2px;
+}
+
+nav ul li:not(first) {
+margin-left: 20px;
+}
+
+nav ul li:hover {
+    transition: all .05s;
+    border-bottom: solid 2px #f6af6d;
+}
+
+#login {
+    flex: 1 0 20%;
+    text-align: right;
+    margin-right: 25px;
+}
+
+#login:hover {
+    background-color: none;
+    border-bottom: none;
+}
+
+#login a {
+    width: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+#logo {
+    padding-top: none;
+    flex: 1 0 20%;
+    text-align: left;
+}
+
+#logo a {
+    background-color: #171717;
+    padding: 8px 20px 8px 20px;
+    width: 60px;
+    color: #f6af6d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 0 20px -8px;
+    border-left: solid 3px #202423;
+}
+
+#logo:hover {
+    background-color: none;
+    border-bottom: none;
+}
+
+#thunder {
+    font-weight: bold;
+}
+
+.navitem1 {
+ background: linear-gradient(to left, #eee, #333);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+
+
+.contact-window img {
+	display: block;
+	border: 0;
+	width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+}
+
+.contact-window {
+	background: #1d1d1d;
+	margin: 7% auto 0 auto;
+    height: 800px;
+    width: 40%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    border-radius: 2px;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.contact-window a {
+	color: #656d6f;
+	text-decoration: none;
+}
+
+.contact-content {
+    display: flex;
+	padding: 1.4em;
+}
+
+.contact-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.contact-content p {
+    flex: 0 0 30%;
+	color: white;
+}
+
+.contact-window h1 {
+    color: #f6af6d;
+    font-size: 2em;
+    padding: 20px 0 2px 25px;
+}
+
+.contact-window h3 {
+    border-bottom: solid 2px black;
+    color: #f6af6d;
+    font-size: 1em;
+    padding: 1px 0 20px 25px;
+}
+
+.contact-content input[type=text], input[type=password] {
+  width: 96%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.contact-content input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+label {
+    color: white;
+    font-size: 1.2em;
+}
+
+input[type=submit] {
+  background-color: #656d6f;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
