@@ -298,7 +298,7 @@ nav ul li:hover {
 }
 
 .the-band {
-    flex: 0 0 30%;
+    flex: 0 0 40%;
     display: flex;
     justify-content: center;
     position: relative;
