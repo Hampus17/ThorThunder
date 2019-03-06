@@ -344,7 +344,7 @@ nav ul li:hover {
 }
 
 /* If the screen size is 801px wide or more */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1600px) {
     .the-band {
         height: 80%;
     }
