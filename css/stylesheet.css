@@ -293,6 +293,7 @@ nav ul li:hover {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
+    border: solid 1px #f6af6d;
 }
 
 .the-band {
@@ -306,6 +307,7 @@ nav ul li:hover {
     padding: 20px;
     height: 90%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+    border: solid 1px #f6af6d;
     border-radius: 5px;
     color: white;
 }
@@ -378,18 +380,129 @@ nav ul li:hover {
 /****************** EVENTS SECTION *******************/
 #events {
     width: 100%;
+    height: 50vh;
+    color: white;
 }
 
 .event {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 10px;
-    background-color: red;
-    border-bottom: solid 2px blue;
+    background-color: #0c0c0c;
+    border-bottom: solid 2px #3d3d3d;
+    height: 80px;
+    line-height: 80px;
 }
 
-.event:nth-child(1) { order: 1; }
-.event:nth-child(2) { order: 2; }
-.event:nth-child(3) { order: 4; }
-.event:nth-child(4) { order: 3; }
-.event:nth-child(5) { order: 5; }
+
+.event-date {
+    flex: 0 0 20%;
+}
+
+.event-info {
+    flex: 0 0 40%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.event-info p {
+    top: 10px;
+    line-height: 20px;
+}
+
+.event-info .event-item {
+    font-weight: 800;
+}
+
+.event-info {
+    flex: 0 0 40%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.event-tickets p {
+    top: 10px;
+    line-height: 35px;
+}
+
+.event-tickets {
+    flex: 0 0 40%;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.event-tickets a {
+    text-decoration: none;
+    color: white;
+    background-color: #e50914;
+    padding: 5px
+}
+
+/****************** FOOTER *******************/
+.footer{
+	background-color: #141414;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+	.footer .footer-left,
+	.footer .footer-right{
+		text-align: center;
+	}
+
+	.footer .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
