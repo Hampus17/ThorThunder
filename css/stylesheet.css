@@ -330,8 +330,8 @@ nav ul li:hover {
 
 .band-member img {
     border-radius: 50%;
-    max-height: 80px;
-    max-width: 80px;
+    height: 80px;
+    width: 80px;
 }
 
 .band-member h2 {
@@ -341,4 +341,36 @@ nav ul li:hover {
 .about-text {
     text-align: left;
     font-size: 1vw;
+}
+
+/* If the screen size is 801px wide or more */
+@media screen and (min-width: 801px) {
+    .the-band {
+        height: 80%;
+    }
+
+  .the-band h1 {
+    font-size: 2.3em;
+  }
+
+  .the-band h2 {
+    font-size: 1.8em;
+  }
+
+  .about-text {
+      font-size: 1.3em;
+  }
+
+  .green-earth p {
+      font-size: 1.2em;
+  }
+
+  .band-member h1 {
+      font-size: 1.4em;
+  }
+
+  .band-member img {
+      width: 120px;
+      height: 120px;
+  }
 }
