@@ -238,7 +238,7 @@ nav ul li:hover {
     height: 100px;
     background-color: #141414;
     border-bottom: solid 2px #3d3d3d;
-    padding: 10px;
+    padding: 10px 0;
     margin-top: 100px;
 }
 
@@ -251,11 +251,10 @@ nav ul li:hover {
 }
 
 .divider a {
-    flex: 0 0 70%;
     line-height: 100px;
     font-size: 1.1em;
-    padding: 0 10% 0 4%;
-    margin: auto 0;
+    margin: auto auto auto 4%;
+    width: 40%;
     text-decoration: none;
     color: #fff;
 }
@@ -269,11 +268,10 @@ nav ul li:hover {
 }
 
 .green-earth {
-    flex: 0 0 40%;
+    flex: 0 1 40%;
     text-align: left;
     margin: 7% auto 0 5%;
     padding: 20px;
-    height: inherit;
     color: white;
     border-radius: 0 4px 4px 0;
 }
@@ -286,7 +284,7 @@ nav ul li:hover {
 }
 
 .green-earth p {
-    font-size: 1.2em;
+    font-size: 1.2vw;
     margin: 15px auto 15px 12px;
 }
 
@@ -298,7 +296,7 @@ nav ul li:hover {
 }
 
 .the-band {
-    flex: 0 0 40%;
+    flex: 0 1 40%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -306,7 +304,7 @@ nav ul li:hover {
     background-color: rgba(11, 13, 14, 0.7);
     margin: 5% 5% 0 0;
     padding: 20px;
-    height: 80%;
+    height: 90%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
     border-radius: 5px;
     color: white;
@@ -314,11 +312,10 @@ nav ul li:hover {
 
 .the-band h1 {
     position: absolute;
-    top: 14px;
-    left: 18px;
-    font-size: 2em;
+    top: 10px;
+    left: 14px;
+    font-size: 2vw;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .band-member {
@@ -333,10 +330,15 @@ nav ul li:hover {
 
 .band-member img {
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.band-member h2 {
+  font-size: 1.4vw
 }
 
 .about-text {
     text-align: left;
+    font-size: 1vw;
 }
